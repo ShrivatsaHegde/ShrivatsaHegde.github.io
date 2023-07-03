@@ -1043,9 +1043,9 @@
       max-width: 16.66667%; }
     .col-lg-3 {
       -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-      flex: 0 0 50%;
-      max-width: 50%; }
+      -ms-flex: 0 0 33%;
+      flex: 0 0 33%;
+      max-width: 33%; }
     .col-lg-4 {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 33.33333%;
