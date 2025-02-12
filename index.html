@@ -42,13 +42,16 @@
 	
 			/* Floating Navigation Bar */
 			.navbar {
-				position: fixed;
-				top: 0;
-				left: 0;
-				width: 100%;
-				z-index: 999;
-				background-color: #2b2a2ac5;
-				
+  				position: justify;
+  				top: 0;
+  				width: 100%;
+  				z-index: 999;
+  				background-color: #2b2a2ac5;
+  				backdrop-filter: blur(10px); /* Optional: Add blur effect */
+  				box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+ 				display: flex;
+  				justify-content: center;
+  				align-items: center;
 			}
 		</style>
 	
@@ -96,6 +99,16 @@
 
                 <div class="col-md-6">
                     <h2 class="mb-5 resume-heading"><strong>Experience</strong></h2>
+
+                    <div class="resume-item mb-4 exp">
+                        <span class="date"><i class="fas fa-calendar-alt"></i> October 2023 - November 2024</span>
+                        <h3><i>Research Assistant</i></h3>
+                        <p><i>Investigated molecular docking, modeling, and gene expression in depth. 
+                            Published a paper on the computational approach to studying the effects of phytochemicals on cancer. 
+                            The gene expression studies included expression matrices, identifying differentially expressed genes, and more. 
+                            <br></br>Briefly explored freelancing opportunities to apply my skills in real-world projects.</i></p>
+                        <a href="https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2024.1427632/full" target="www.frontiersin.org"><span class="exp">Publication Link</span></a>
+                    </div>
 
                     <div class="resume-item mb-4 exp">
                         <span class="date"><i class="fas fa-calendar-alt"></i> December 2022 - February 2023</span>
@@ -444,26 +457,21 @@
 			<div class="row mb-5" id="profiles">
 				<div class="col-md-12 text-center">
 					<p>
-						<a href="https://www.linkedin.com/in/shrivatsa-hegde-3b410824a" class="social-item"
-							target="_blank" title='LinkedIn'><img
-								src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
-								alt="LinkedIn" height="40" width="30" /><span class=""></span></a>
-						<a href="https://github.com/ShrivatsaHegde" class="social-item" target="_blank"
-							title='Github'><img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg"
-								alt="Github" height="40" width="30" /><span class=""></span></a>
-						<a href="https://www.facebook.com/shrivatsa.hegde.75/" class="social-item"
-							target="_blank" title='Facebook'><img
-								src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg"
-								alt="Facebook" height="40" width="30" /><span class=""></span></a>
-						<a href="https://x.com/Shrivatsa924/" class="social-item"
-							target="_blank" title='X'><img
-								src="https://cdn.jsdelivr.net/npm/simple-icons@14.2.0/icons/x.svg"
-								alt="X" height="40" width="30" /><span class=""></span></a>
-						<a href="https://www.instagram.com/shrivatsaheg_de" class="social-item"
-							target="_blank" title='Instagram'><img
-								src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg"
-								alt="Instagram" height="40" width="30" /><span class=""></span></a>
-
+						<a href="https://www.linkedin.com/in/shrivatsa-hegde-3b410824a" class="social-item" target="_blank" title='LinkedIn'>
+							<img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="LinkedIn" />
+						</a>
+						<a href="https://github.com/ShrivatsaHegde" class="social-item" target="_blank" title='Github'>
+							<img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" alt="Github" />
+						</a>
+						<a href="https://www.facebook.com/shrivatsa.hegde.75/" class="social-item" target="_blank" title='Facebook'>
+							<img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg" alt="Facebook" />
+						</a>
+						<a href="https://x.com/Shrivatsa924/" class="social-item" target="_blank" title='X'>
+							<img src="https://cdn.jsdelivr.net/npm/simple-icons@14.2.0/icons/x.svg" alt="X" />
+						</a>
+						<a href="https://www.instagram.com/shrivatsaheg_de" class="social-item" target="_blank" title='Instagram'>
+							<img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="Instagram" />
+						</a>
 					</p>
 				</div>
 			</div>

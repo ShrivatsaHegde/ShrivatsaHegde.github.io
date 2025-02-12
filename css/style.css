@@ -87,16 +87,20 @@ a:active {
 
 .site-navbar {
   border: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border-radius: 0px;
-  margin-bottom: 0px;
-  background: none;
-  position: absolute;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.95);
+  position: fixed;
   top: 20px;
-  width: 100%;
-  z-index: 200;
-  background: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  padding: 12px 0;
+  transition: all 0.3s ease;
 }
 .site-navbar .navbar-brand {
   display: inline-block;
@@ -223,7 +227,16 @@ a:active {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-}
+  color: #f8f9fa;
+  letter-spacing: 0.05em;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+ .site-hero .lead {
+  line-height: 1.8;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+ }
 .site-hero h1 {
   font-weight: 200;
   margin-bottom: 20px;
@@ -779,21 +792,24 @@ a:active {
 }
 .site-footer .social-item {
   display: inline-block;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background: #333;
   position: relative;
   border-radius: 50%;
-  font-size: 22px;
+  font-size: 24px;
   margin: 0 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
-.site-footer .social-item > span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.site-footer .social-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0%;
+  padding: 10px;
+}
+.site-footer .social-item:hover {
+  background-color: #bac964;
+  transform: scale(1.1);
 }
 
 .block-47 .block-47-image {
@@ -1371,3 +1387,4 @@ body2 {
   clear: both;
   display: table;
 }
+
